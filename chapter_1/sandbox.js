@@ -1,13 +1,12 @@
+let radius = 10;
+const pi = 3.14;
 
-let email = 'harrison@hotmail.com';
+// console.log(radius, pi);
 
-// let result = email.indexOf('@');
+// math operators +, -, *, /, **, %
 
-// let result = email.lastIndexOf('n');
+// console.log(10 / 2);
+// let result = radius % 3;
 
-// let result = email.slice(0,5);
-
-// let result = email.substr(4, 10)
-
-let result = email.replace('n', 'w')
+let result = pi * radius**2;
 console.log(result);
