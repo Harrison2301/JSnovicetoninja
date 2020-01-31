@@ -20,5 +20,12 @@ let likes = 10;
 // likes = likes + 1
 // likes++
 // likes+=10;
-likes-=5;
-console.log(likes);
+// likes-=5;
+// console.log(likes);
+
+// NaN - not a number
+
+// console.log(5 /'hello');
+
+let result = 'the blog has ' + likes +' likes';
+console.log(result);
