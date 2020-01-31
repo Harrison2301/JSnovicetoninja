@@ -13,3 +13,7 @@ let result = `The blog called ${title} by ${author} has ${likes} likes`
 console.log(result)
 
 //creating html templates
+let html = `
+<h2>${title}</h2>
+<p>By ${author}</p>
+<span>This blog has ${likes} like</span>`
