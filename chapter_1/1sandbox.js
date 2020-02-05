@@ -1,19 +1,14 @@
-//template strings 
 
-const title = 'Best reads of 2019';
-const author = 'Mario';
-const likes = 30; 
+let email = 'harrison@hotmail.com';
 
-//concatenation way
-// let result = 'The blog called ' + title + ' by ' + author + ' has ' + likes + ' likes';
-// console.log(result)
+// let result = email.indexOf('@');
 
-//template string way
-let result = `The blog called ${title} by ${author} has ${likes} likes`
-console.log(result)
+// let result = email.lastIndexOf('n');
 
-//creating html templates
-let html = `
-<h2>${title}</h2>
-<p>By ${author}</p>
-<span>This blog has ${likes} like</span>`
+// let result = email.slice(0,5);
+
+// let result = email.substr(4, 10);
+
+// let result = email.replace('n', 'w');
+
+console.log(result);
