@@ -1,28 +1,12 @@
-// booleans & comparisons
-
-//methods can return booleans
-let email = 'harrison@email.com'
-let names = ['mario', 'luigi', 'toad'];
-
-// let result = email.includes('!')
-// let result = names.includes('harrison')
-
-// console.log(result);
-
-//comparison operators
-
 let age = 23;
 
+// loose comparison (different types can still be equal)
+
 // console.log(age == 23);
-// console.log(age == 32);
-// console.log(age != 32);
-// console.log(age > 32);
-// console.log(age < 32);
-// console.log(age <= 32);
-// console.log(age >= 23);
+// console.log(age =='23');
 
-let name = 'harrison';
+// strict comparison (different types cannot be equal)
 
-console.log(name == 'harrison')
-console.log(name == 'Harrison')
-
+console.log(age === 23)
+console.log(age === '23')
+console.log(age !== '23')
