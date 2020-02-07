@@ -7,8 +7,18 @@
 
 const names = ['harrison', 'mario', 'luigi'];
 
-for(let i = 0; i < names.length; i++){
-    // console.log(names[i]);
-    let html = `<div>${names[i]}</div>`
-    console.log(html);
+// for(let i = 0; i < names.length; i++){
+//     // console.log(names[i]);
+//     let html = `<div>${names[i]}</div>`
+//     console.log(html);
+// }
+
+// while loops
+
+let i = 0;
+
+while(i < names.length){
+console.log(names[i]);
+i++;
 }
+
