@@ -15,10 +15,18 @@ const names = ['harrison', 'mario', 'luigi'];
 
 // while loops
 
+// let i = 0;
+
+// while(i < names.length){
+// console.log(names[i]);
+// i++;
+// }
+
+// do while loops 
+
 let i = 0;
 
-while(i < names.length){
-console.log(names[i]);
-i++;
-}
-
+do{
+    console.log('val of i is ', i);
+    i++;
+}while(i < 5);
