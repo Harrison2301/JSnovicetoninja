@@ -12,12 +12,12 @@
 // }
 
 // else if statement
-const password = 'passsssssssss';
+const password = 'pass@ssss';
 
-if(password.length >= 12){
-    console.log('that is a long password')
-}else if (password.length >= 8){
-    console.log('that password is long enough')
+if(password.length >= 12 && password.includes('@')){
+    console.log('that is a strong password')
+}else if (password.length >= 8 || password.includes('@')){
+    console.log('that password is strong enough')
 } else {
-    console.log("please add more charactors")
+    console.log("this password is not strong enough")
 }
