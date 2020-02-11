@@ -23,10 +23,28 @@
 // }
 
 // logical NOT(!)
-let user = false;
+// let user = false;
 
-if(!user){
-console.log('you must be logged in to continue')
+// if(!user){
+// console.log('you must be logged in to continue')
+// }
+// console.log(!true)
+// console.log(!false)
+
+// break and continue 
+
+const scores = [50, 25, 0, 30, 100, 20, 10];
+
+for(let i = 0; i < scores.length; i++){
+
+    if(scores[i] === 0){
+        continue;
+    }
+
+    console.log('your score: ', scores[i]);
+
+    if(scores[i] === 100){
+        console.log('congrats, top score!')
+        break;
+    }
 }
-console.log(!true)
-console.log(!false)
