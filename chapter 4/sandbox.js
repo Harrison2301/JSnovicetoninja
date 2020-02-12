@@ -37,11 +37,26 @@
 // console.log(area)
 
 
- // arrow functions
+ // arrow function
 
- const calcArea = radius => 3.14 * radius**2;
+//  const calcArea = radius => 3.14 * radius**2;
 
-  const area = calcArea(5);
+//   const area = calcArea(5);
 
-console.log(area)
+// console.log(area)
  
+
+const name = "harrison";
+
+// functions
+const greet = () => 'hello';
+
+let resultOne = greet();
+
+console.log(resultOne)
+
+//methods
+
+let resultTwo = name.toUpperCase()
+
+console.log(resultTwo);
