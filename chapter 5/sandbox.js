@@ -5,24 +5,43 @@ name: 'crystal',
 age: 30,
 email: 'crystal@email.ca',
 location: 'canada',
-blogs: ['why mac and cheese is awesome', 'fun stuff on the weekend']
+blogs: ['why mac and cheese is awesome', 'fun stuff on the weekend'],
+login: function(){
+    console.log('the user logged in');
+},
+logout: function(){
+    console.log('the user logged out');
+},
+logBlogs: function(){
+    // console.log(this.blogs)
+    console.log('this user has created the following blogs:')
+    this.blogs.forEach(blog => {
+        console.log(blog);
+    })
+}
 };
 
-console.log(user);
-// dot notation
-console.log(user.name);
+user.logBlogs();
 
-// user.age = 35;
-console.log(user.age);
+// user.login();
+// user.logout();
 
-//square bracket notation
 
-console.log(user['email']);
+// console.log(user);
+// // dot notation
+// console.log(user.name);
 
-user['name'] = 'harrison';
+// // user.age = 35;
+// console.log(user.age);
 
-console.log(user['name']);
+// //square bracket notation
 
-const key = (user['key']);
+// console.log(user['email']);
 
-console.log(typeof user);
+// user['name'] = 'harrison';
+
+// console.log(user['name']);
+
+// const key = (user['key']);
+
+// console.log(typeof user);
