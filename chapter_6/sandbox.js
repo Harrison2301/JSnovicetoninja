@@ -33,23 +33,38 @@
 
 // para.innerText += ', this has been updated';
 
-const paras = document.querySelectorAll('p');
+// const paras = document.querySelectorAll('p');
 
-paras.forEach(para => {
-    para.innerText += ', this has been updated'
-})
+// paras.forEach(para => {
+//     para.innerText += ', this has been updated'
+// })
 
-const content = document.querySelector('.content');
+// const content = document.querySelector('.content');
 
-content.innerHTML = '<h2> this is a new H2!!!! </h2>'
+// content.innerHTML = '<h2> this is a new H2!!!! </h2>'
 
 
 
-// *************************
-const people = [
-    'mario', 'luigi', 'harrison'
-]
+// // *************************
+// const people = [
+//     'mario', 'luigi', 'harrison'
+// ]
 
-people.forEach(person => {
-    content.innerHTML += `<p>${person}</p>`
-})
+// people.forEach(person => {
+//     content.innerHTML += `<p>${person}</p>`
+// })
+
+const link = document.querySelector('a')
+
+console.log(link.getAttribute('href'));
+
+link.setAttribute('href', 'https://www.github.com');
+link.innerText = 'Github'
+
+const message = document.querySelector('p');
+
+console.log(message.getAttribute('class'));
+
+message.innerText = 'success'
+
+message.setAttribute('style', 'color: green');
