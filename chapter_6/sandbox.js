@@ -67,4 +67,10 @@ console.log(message.getAttribute('class'));
 
 message.innerText = 'success'
 
-message.setAttribute('style', 'color: green');
+// message.setAttribute('style', 'margin: 50px');
+
+//change style rather then set attribute to avoid over riding
+message.style.margin = '50px';
+message.style.color = 'crimson';
+message.style.fontSize = '60px';
+message.style.color = ''
