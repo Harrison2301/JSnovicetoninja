@@ -75,10 +75,23 @@
 // message.style.fontSize = '60px';
 // message.style.color = ''
 
-const content = document.querySelector('p');
+// const content = document.querySelector('p');
 
-console.log(content.classList);
+// console.log(content.classList);
 
-content.classList.add('error')
-content.classList.remove('error')
-content.classList.add('success');
+// content.classList.add('error')
+// content.classList.remove('error')
+// content.classList.add('success');
+
+const paras = document.querySelectorAll('p');
+
+paras.forEach(p => {
+   if(p.textContent.includes('error')){
+       p.classList.add('error');
+   } 
+   if(p.innerText.includes('success')){
+       p.classList.add('success')
+   }
+});
+
+
