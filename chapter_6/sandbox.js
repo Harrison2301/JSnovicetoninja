@@ -54,23 +54,28 @@
 //     content.innerHTML += `<p>${person}</p>`
 // })
 
-const link = document.querySelector('a')
+// const link = document.querySelector('a')
 
-console.log(link.getAttribute('href'));
+// console.log(link.getAttribute('href'));
 
-link.setAttribute('href', 'https://www.github.com');
-link.innerText = 'Github'
+// link.setAttribute('href', 'https://www.github.com');
+// link.innerText = 'Github'
 
-const message = document.querySelector('p');
+// const message = document.querySelector('p');
 
-console.log(message.getAttribute('class'));
+// console.log(message.getAttribute('class'));
 
-message.innerText = 'success'
+// message.innerText = 'success'
 
-// message.setAttribute('style', 'margin: 50px');
+// // message.setAttribute('style', 'margin: 50px');
 
-//change style rather then set attribute to avoid over riding
-message.style.margin = '50px';
-message.style.color = 'crimson';
-message.style.fontSize = '60px';
-message.style.color = ''
+// //change style rather then set attribute to avoid over riding
+// message.style.margin = '50px';
+// message.style.color = 'crimson';
+// message.style.fontSize = '60px';
+// message.style.color = ''
+
+const content = document.querySelector('p');
+
+console.log(content.classList);
+
