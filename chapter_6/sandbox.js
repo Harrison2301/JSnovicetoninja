@@ -83,15 +83,21 @@
 // content.classList.remove('error')
 // content.classList.add('success');
 
-const paras = document.querySelectorAll('p');
+// const paras = document.querySelectorAll('p');
 
-paras.forEach(p => {
-   if(p.textContent.includes('error')){
-       p.classList.add('error');
-   } 
-   if(p.innerText.includes('success')){
-       p.classList.add('success')
-   }
+// paras.forEach(p => {
+//    if(p.textContent.includes('error')){
+//        p.classList.add('error');
+//    } 
+//    if(p.innerText.includes('success')){
+//        p.classList.add('success')
+//    }
+// });
+const article = document.querySelector('article');
+
+
+Array.from(article.children).forEach(child => {
+child.classList.add('article-element');
 });
 
 
