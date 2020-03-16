@@ -106,3 +106,9 @@
 // console.log(title.parentElement.parentElement)
 // console.log(title.nextElementSibling)
 // console.log(title.previousElementSibling)
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+    console.log('you clicked me')
+})
