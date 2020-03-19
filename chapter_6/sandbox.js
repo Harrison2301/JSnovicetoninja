@@ -127,6 +127,12 @@ ul.append(li);
 items.forEach(item => {
     item.addEventListener('click', e => {
         // e.target.style.textDecoration = 'line-through'
+        console.log('event in li')
+        e.stopPropagation();
         e.target.remove();
     }) 
+})
+
+ul.addEventListener('click', e => {
+    console.log('event in UL')
 })
