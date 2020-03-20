@@ -114,7 +114,7 @@
 // })
 const ul = document.querySelector('ul');
 
-const items = document.querySelectorAll('li');
+// const items = document.querySelectorAll('li');
 
 const button = document.querySelector('button');
 
@@ -124,15 +124,17 @@ li.textContent = 'something new to do';
 ul.append(li);
 });
 
-items.forEach(item => {
-    item.addEventListener('click', e => {
-        // e.target.style.textDecoration = 'line-through'
-        console.log('event in li')
-        e.stopPropagation();
-        e.target.remove();
-    }) 
-})
+// items.forEach(item => {
+//     item.addEventListener('click', e => {
+//         // e.target.style.textDecoration = 'line-through'
+//         console.log('event in li')
+//         e.stopPropagation();
+//         e.target.remove();
+//     }) 
+// })
 
 ul.addEventListener('click', e => {
-    console.log('event in UL')
+    // console.log('event in UL')
+    // console.log(e.target)
+    e.target.remove()
 })
