@@ -110,31 +110,44 @@
 // const button = document.querySelector('button');
 
 // button.addEventListener('click', () => {
-//     console.log('you clicked me')
+// //     console.log('you clicked me')
+// // })
+// const ul = document.querySelector('ul');
+
+// // const items = document.querySelectorAll('li');
+
+// const button = document.querySelector('button');
+
+// button.addEventListener('click', () => {
+// const li = document.createElement('li');
+// li.textContent = 'something new to do';
+// ul.append(li);
+// });
+
+// // items.forEach(item => {
+// //     item.addEventListener('click', e => {
+// //         // e.target.style.textDecoration = 'line-through'
+// //         console.log('event in li')
+// //         e.stopPropagation();
+// //         e.target.remove();
+// //     }) 
+// // })
+
+// ul.addEventListener('click', e => {
+//     // console.log('event in UL')
+//     // console.log(e.target)
+//     e.target.remove()
 // })
-const ul = document.querySelector('ul');
 
-// const items = document.querySelectorAll('li');
+const copy = document.querySelector('.copy-me');
 
-const button = document.querySelector('button');
-
-button.addEventListener('click', () => {
-const li = document.createElement('li');
-li.textContent = 'something new to do';
-ul.append(li);
+copy.addEventListener('copy', ()=> {
+    console.log('my content is copyright')
 });
 
-// items.forEach(item => {
-//     item.addEventListener('click', e => {
-//         // e.target.style.textDecoration = 'line-through'
-//         console.log('event in li')
-//         e.stopPropagation();
-//         e.target.remove();
-//     }) 
-// })
+const box = document.querySelector('.box');
 
-ul.addEventListener('click', e => {
-    // console.log('event in UL')
-    // console.log(e.target)
-    e.target.remove()
+box.addEventListener('mousemove', e => {
+    // console.log(e.offsetX, e.offsetY);
+    box.textContent = `x position is ${e.offsetX}  y pos - ${e.offsetY}`
 })
