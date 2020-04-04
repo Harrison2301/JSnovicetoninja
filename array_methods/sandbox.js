@@ -1,16 +1,25 @@
 const scores = [10, 30, 15, 25, 50, 50, 5, 70, 90, 80];
 
+//******* Find */
+
+const firstHighscore = scores.find((score) => {
+    return score > 50;
+})
+
+console.log(firstHighscore)
+
 
 //***** Reduce */
 
-const result = scores.reduce((acc, curr) => {
-    if(curr > 50){
-        acc++;
-    }
-    return acc;
-}, 0);
+// const result = scores.reduce((acc, curr) => {
+//     if(curr > 50){
+//         acc++;
+//     }
+//     return acc;
+// }, 0);
 
-console.log(result);
+// console.log(result);
+
 // ****** Map
 // const salePrices = prices.map((price) => {
 // return price / 2;
