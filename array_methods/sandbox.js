@@ -1,5 +1,16 @@
-const prices = [10, 30, 15, 25, 50, 50, 5];
+const scores = [10, 30, 15, 25, 50, 50, 5, 70, 90, 80];
 
+
+//***** Reduce */
+
+const result = scores.reduce((acc, curr) => {
+    if(curr > 50){
+        acc++;
+    }
+    return acc;
+}, 0);
+
+console.log(result);
 // ****** Map
 // const salePrices = prices.map((price) => {
 // return price / 2;
@@ -7,23 +18,23 @@ const prices = [10, 30, 15, 25, 50, 50, 5];
 
 // console.log(salePrices);
 
-const products = [
-    {name: 'gold star', price: 20},
-    {name: 'mushroom', price: 40},
-    {name: 'green shells', price: 30},
-    {name: 'banana skin', price: 10},
-    {name: 'red shells', price: 50},
-]
+// const products = [
+//     {name: 'gold star', price: 20},
+//     {name: 'mushroom', price: 40},
+//     {name: 'green shells', price: 30},
+//     {name: 'banana skin', price: 10},
+//     {name: 'red shells', price: 50},
+// ]
 
-const filteredSales = products.map((product) => {
-    if(product.price > 30) {
-        return {name: product.name, price: product.price/2}
-    } else {
-        return product;
-    }
-})
+// const filteredSales = products.map((product) => {
+//     if(product.price > 30) {
+//         return {name: product.name, price: product.price/2}
+//     } else {
+//         return product;
+//     }
+// })
 
-console.log(filteredSales)
+// console.log(filteredSales)
 
 // ******* Filter
 
